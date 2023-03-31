@@ -46,4 +46,5 @@ let jumlahHuruf2 = mahasiswa.map((nama) => ({
   nama, //? sama dengan < nama : nama, >
   jmlHuruf: nama.length,
 }));
-console.table(jumlahHuruf);
+console.table(jumlahHuruf2);
+console.log(jumlahHuruf2);
