@@ -1,5 +1,18 @@
 //!  TEMPLATE LITERAL
-//? contoh penggunaan lain template literal, membuat HTML Fragment
+
+//! string multiline
+console.log(
+  `string 1 
+  string 2
+  string 3`
+);
+
+//! embedded ekspression
+console.log(`1 + 1 = ${1 + 1}`);
+const x = 10;
+console.log(`${x} adalah bilangan ${x % 2 == 0 ? "genap" : "ganjil"}`);
+
+//! contoh penggunaan lain template literal, membuat HTML Fragment
 const mhs = {
   nama: "Muhammad Abdanul Ikhlas",
   NIM: "123210009",
