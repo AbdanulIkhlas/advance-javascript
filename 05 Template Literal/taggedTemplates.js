@@ -8,8 +8,18 @@ function cobaTagged(strings, ...values) {
   //? : strings = ["Halo nama saya "," , saya berumur ", " tahun"]
   //? values menyimpan ekspression yang ada di str dalam sebuah array
   //? : values = ["klaz",20]
-
-  return values;
+  //----------------------------------
+  //! menggabungkan strings dan values menggunakan forEach
+  //   let result = "";
+  //   strings.forEach((str, i) => {
+  //     result += `${str}${values[i] || ""}`; //? maksud or pada values adalah jika values tidak ada isinya maka tampilkan '' (untuk menghapus undefined)
+  //   });
+  //   return result;
+  //----------------------------------
+  //! menggabungkan strings dan values menggunakan reduce
+  return strings.reduce((result, str, i) => {
+    `${result}${str}${values[i] || ""}`;
+  }, "");
 }
 
 //? penggunaan tagged templates
